@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon</title>
+    <link rel="stylesheet" href="amazon.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo"></div>
+               </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver To</p>
+            <div class="address-icon">
+                <i class="ri-map-pin-line"></i>
+                    <p class="add-second">India</p>
+               </div>
+               </div>
+
+               <div class="nav-search">
+                   <select class="search-select">
+                       <option value="">All</option>
+                   </select>
+                   <input type="text" placeholder="Search Amazon" class="search-input">
+                   <div class="search-icon">
+                    <i class="ri-search-line"></i>
+                   </div>
+               </div>
+            <div class="nav-signin border">
+                   <p><span>Hello, Sign in </span></p>
+                   <p class="nav-second">Account & Lists</p>
+               </div>
+               <div class="nav-return border">
+                <p><span>Return </span></p>
+                <p class="nav-second"> & Order</p>
+            </div>
+
+
+            <div class="nav-cart border">
+                <i class="ri-shopping-cart-line"></i>
+                Cart
+            </div>
+               </div>
+
+
+
+               <div class="panel">
+               <div class="panel-all ">
+                <i class="ri-menu-line"></i>
+                All
+               </div>
+               <div class="panel-option ">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+               </div>
+               <div class="panel-deals">
+                   Shope deal with Electronic
+               </div>
+               </div>
+    </header>
+
+
+
+
+<div class="hero-section">
+<div class="hero-msg">
+    <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a>Click here to go to amazon.in</a></p>
+</div>
+</div>
+
+
+
+<div class="shop-section">
+    <div class="box1 box">
+      <div class="box-content">
+          <h2>Health & Personal Care</h2>
+          <div class="box-img" style="background-image: url('./box2_image.jpg');"></div>
+          <p>See more</p>
+      </div>
+        </div>
+    <div class="box2 box">
+        <div class="box-content">
+            <h2>Cloths</h2>
+            <div class="box-img" style="background-image: url('./box1_image.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box3 box">
+        <div class="box-content">
+            <h2>Furniture</h2>
+            <div class="box-img" style="background-image: url('./box3_image.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box4 box">
+        <div class="box-content">
+            <h2>Mobiles</h2>
+            <div class="box-img" style="background-image: url('./box4_image.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box5 box">
+        <div class="box-content">
+            <h2>Makup kits</h2>
+            <div class="box-img" style="background-image: url('./box5_image.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box6 box">
+        <div class="box-content">
+            <h2>Pets care</h2>
+            <div class="box-img" style="background-image: url('./box6_image.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box7 box">
+        <div class="box-content">
+            <h2>Flights&Tickes</h2>
+            <div class="box-img" style="background-image: url('./box7_image.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box8 box">
+        <div class="box-content">
+            <h2>Fashion trends</h2>
+            <div class="box-img" style="background-image: url('./box8_image.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box9 box">
+        <div class="box-content">
+            <h2>For you Fitness Need</h2>
+            <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box10 box">
+        <div class="box-content">
+            <h2>Laptop & Tablets</h2>
+            <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box6 box">
+        <div class="box-content">
+            <h2>Smart Watches</h2>
+            <div class="box-img" style="background-image: url('https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg');"></div>
+            <p>See more</p>
+        </div>
+    </div>
+    <div class="box6 box">
+        <div class="box-content">
+            <h2>books ans Notebooks</h2>
+            <div class="box-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2022/BTS/Fuji_dash_BTS_1X._SY304_CB630084689_.jpg);"></div>
+            <p>See more</p>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="footer-panel1">
+        Back to Top
+    </div>
+    <div class="footer-panel2">
+<u>
+    <p>Get to know Us</p>
+   <a>Careers</a>
+   <a>Blog</a>
+   <a>About Amazon</a>
+   <a>Investor Relations</a>
+  <a>  Amazon Devices</a>
+   <a> Amazon Science</a>
+    
+</u>
+<u>
+    <p>Get to know Us</p>
+   <a>Careers</a>
+   <a>Blog</a>
+   <a>About Amazon</a>
+   <a>Investor Relations</a>
+  <a>  Amazon Devices</a>
+   <a> Amazon Science</a>
+    
+</u>
+<u>
+    <p>Get to know Us</p>
+   <a>Careers</a>
+   <a>Blog</a>
+   <a>About Amazon</a>
+   <a>Investor Relations</a>
+  <a>  Amazon Devices</a>
+   <a> Amazon Science</a>
+    
+</u>
+<u>
+    <p>Get to know Us</p>
+   <a>Careers</a>
+   <a>Blog</a>
+   <a>About Amazon</a>
+   <a>Investor Relations</a>
+  <a>  Amazon Devices</a>
+   <a> Amazon Science</a>
+    
+</u>
+
+    </div>
+    <div class="foot-panel3">
+        <div class="logo"></div>
+    </div>
+
+    <div class="foot-panel4">
+        <div class="pages">
+            <a>Condition of Use</a>
+            <a>Privacy Notice</a>
+            <a>your Ads Privacy Choice</a>
+        </div>
+        <div class="copyright">
+        <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
